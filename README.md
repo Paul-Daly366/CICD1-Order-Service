@@ -9,3 +9,7 @@ Endpoints:
 Retrieve orders: '/orders'
 
 Create order: '/order/'
+
+Wk2: Add JPA + H2
+
+Wk3: Add OpenFeign communication with Catalog Service
