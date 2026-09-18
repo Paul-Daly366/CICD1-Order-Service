@@ -7,8 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class OrderService {
-    private final List<PurchaseOrder> orders = new ArrayList<PurchaseOrder>();
+public class PurchaseOrderService {
+    private final List<PurchaseOrder> orders = new ArrayList<>();
     private long nextId = 1;
 
     public List<PurchaseOrder> getAll(){
