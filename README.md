@@ -1,4 +1,4 @@
-CICD1 Lab 1
+CICD1 Lab Work
 
 Order Service :8083
 
@@ -12,6 +12,8 @@ Retrieve orders: '/orders'
 Create order: '/order/'
 
 Test connection to Catalog Service: '/orders/test-catalog/{id}'
+
+Get Product by Order: '/orders/{id}/product'
 
 Wk2: Add JPA + H2 - Done
 
