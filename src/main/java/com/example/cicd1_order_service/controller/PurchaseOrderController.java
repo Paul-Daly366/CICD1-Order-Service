@@ -34,4 +34,9 @@ public class PurchaseOrderController {
     public ProductResponse testCatalogConnection(@PathVariable("productId") Long productId){
         return purchaseOrderService.testCatalogConnection(productId);
     }
+
+    @GetMapping("/{id}/product")
+    public ProductResponse getProductForOrder(@PathVariable Long id){
+        return purchaseOrderService.getProductForOrder(id);
+    }
 }
