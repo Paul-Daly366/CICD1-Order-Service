@@ -10,6 +10,8 @@ Retrieve orders: '/orders'
 
 Create order: '/order/'
 
+Test connection to Catalog Service: '/orders/test-catalog/{id}'
+
 Wk2: Add JPA + H2 - Done
 
 Wk3: Add OpenFeign communication with Catalog Service
