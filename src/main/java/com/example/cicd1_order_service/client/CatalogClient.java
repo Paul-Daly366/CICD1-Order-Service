@@ -1,5 +1,6 @@
-package com.example.cicd1_order_service.service.client;
+package com.example.cicd1_order_service.client;
 
+import com.example.cicd1_order_service.client.dto.ProductResponse;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -10,5 +11,5 @@ import org.springframework.web.bind.annotation.PathVariable;
 )
 public interface CatalogClient {
     @GetMapping("/products/{id}")
-    String getProductById(@PathVariable("id") Long id);
+    ProductResponse getProductById(@PathVariable("id") Long id);
 }

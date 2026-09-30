@@ -1,8 +1,9 @@
 package com.example.cicd1_order_service.service;
 
+import com.example.cicd1_order_service.client.dto.ProductResponse;
 import com.example.cicd1_order_service.model.PurchaseOrder;
 import com.example.cicd1_order_service.repository.PurchaseOrderRepository;
-import com.example.cicd1_order_service.service.client.CatalogClient;
+import com.example.cicd1_order_service.client.CatalogClient;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -26,7 +27,7 @@ public class PurchaseOrderService {
         return repository.save(order);
     }
 
-    public String testCatalogConnection(Long productId){
+    public ProductResponse testCatalogConnection(Long productId){
         return catalogClient.getProductById(productId);
     }
 }

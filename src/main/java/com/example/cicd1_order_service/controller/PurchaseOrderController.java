@@ -1,5 +1,6 @@
 package com.example.cicd1_order_service.controller;
 
+import com.example.cicd1_order_service.client.dto.ProductResponse;
 import com.example.cicd1_order_service.model.PurchaseOrder;
 import com.example.cicd1_order_service.service.PurchaseOrderService;
 import org.springframework.http.HttpStatus;
@@ -30,7 +31,7 @@ public class PurchaseOrderController {
     }
 
     @GetMapping("/test-catalog/{productId}")
-    public String testCatalogConnection(@PathVariable("productId") Long productId){
+    public ProductResponse testCatalogConnection(@PathVariable("productId") Long productId){
         return purchaseOrderService.testCatalogConnection(productId);
     }
 }
