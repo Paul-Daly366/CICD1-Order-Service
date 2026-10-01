@@ -17,4 +17,4 @@ Get Product by Order: '/orders/{id}/product'
 
 Wk2: Add JPA + H2 - Done
 
-Wk3: Add OpenFeign communication with Catalog Service
+Wk3: Add OpenFeign communication with Catalog Service - Done
