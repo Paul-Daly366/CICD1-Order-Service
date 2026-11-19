@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 @FeignClient(
         name = "catalog-service",
         url = "${catalog.service.url}"
+        //url = "localhost:8082"
 )
 public interface CatalogClient {
     @GetMapping("/products/{id}")
