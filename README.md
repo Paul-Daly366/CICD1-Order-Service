@@ -20,3 +20,5 @@ Wk2: Add JPA + H2 - Done
 Wk3: Add OpenFeign communication with Catalog Service - Done
 
 Lab 7 - Docker
+
+![Catalog and Order Docker images](images/docker-images.png)
